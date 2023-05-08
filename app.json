@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "react-native-demo2",
-    "slug": "react-native-demo2",
+    "slug": "kennynoteapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,18 +15,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.kenzo.todolist"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
-        "package": "com.kenzo.todolist"
+        "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ce99b2e1-c056-4dc2-9b55-ca25893ec8b8"
+      }
+    },
+    "owner": "kennyegun24"
   }
 }
