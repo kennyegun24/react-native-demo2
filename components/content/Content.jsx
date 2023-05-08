@@ -36,8 +36,7 @@ export default function Content({ navigation }) {
       </TouchableNativeFeedback>
     )
   };
-
-  const filteredNotes = notes.length >= 0 && notes?.filter((item) => item.text.includes(searchText.toLowerCase()))
+  const filteredNotes = notes.length >= 0 && notes.filter((item) => item.text.toLowerCase().includes(searchText.toLowerCase()));
 
   return (
     <View style={styles.container}>
