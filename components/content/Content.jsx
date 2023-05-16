@@ -10,7 +10,7 @@ export default function Content({ navigation }) {
   const [notes, setNotes] = useState([])
 
   const collectData = async () => {
-    const storedData = await AsyncStorage.getItem('@storage_Key');
+    const storedData = await AsyncStorage.getItem('@kennysNotesApp');
     const parsedData = JSON.parse(storedData)
     setNotes(parsedData)
   }
@@ -36,7 +36,7 @@ export default function Content({ navigation }) {
       </TouchableNativeFeedback>
     )
   };
-  const filteredNotes = notes.length >= 0 && notes.filter((item) => item.text.toLowerCase().includes(searchText.toLowerCase()));
+  const filteredNotes = notes?.length >= 0 && notes?.filter((item) => item.text.toLowerCase().includes(searchText.toLowerCase()));
 
   return (
     <View style={styles.container}>
