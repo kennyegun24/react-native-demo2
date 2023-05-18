@@ -3,6 +3,8 @@
 
 This is a mobile notes app developed with react native. You can create a new note, update a note and delete a note.Every note is sved to localstorage using Async storage.
 
+## Demo
+<a href="https://expo.dev/accounts/kennyegun24/projects/kennynoteapp/builds/e2d4914c-d4e8-4e3f-a0bb-d8a124cfc9ec">Download here </a>
 
 ## Screenshots
 
@@ -20,8 +22,6 @@ This is a mobile notes app developed with react native. You can create a new not
 
 ##### Add new note
 <img src="https://github.com/kennyegun24/react-native-demo2/assets/109461921/396e914a-2cad-4a09-b27e-72a699f92cca" width="300"/>
-
-## Demo
 
 😎
 ## Authors
