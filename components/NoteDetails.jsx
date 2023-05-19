@@ -16,7 +16,7 @@ export default function NoteDetails({ route, navigation }) {
     const getNote = async () => {
         try {
 
-            const getFromLocal = await AsyncStorage.getItem('@storage_Key')
+            const getFromLocal = await AsyncStorage.getItem('@kennysNotesApp')
             const filterItem = JSON.parse(getFromLocal)
 
             return filterItem
@@ -35,7 +35,7 @@ export default function NoteDetails({ route, navigation }) {
         }
         console.log(getParticularArray)
         try {
-            await AsyncStorage.setItem('@storage_Key', JSON.stringify(array));
+            await AsyncStorage.setItem('@kennysNotesApp', JSON.stringify(array));
             showMessage({
                 message: 'Note Updated',
                 description: 'Message',
@@ -59,7 +59,7 @@ export default function NoteDetails({ route, navigation }) {
         const array = await getNote()
         const getParticularArray = array.filter((key) => key.key !== item.key)
         try {
-            await AsyncStorage.setItem('@storage_Key', JSON.stringify(getParticularArray));
+            await AsyncStorage.setItem('@kennysNotesApp', JSON.stringify(getParticularArray));
             showMessage({
                 message: 'Deleted',
                 description: 'Message',
