@@ -28,10 +28,10 @@ export default function AddNewNote({ navigation }) {
         }
         if (text !== '') {
             try {
-                const storedData = await AsyncStorage.getItem('@storage_Key');
+                const storedData = await AsyncStorage.getItem('@kennysNotesApp');
                 let existingData = storedData ? JSON.parse(storedData) : [];
                 existingData.push(data);
-                await AsyncStorage.setItem('@storage_Key', JSON.stringify(existingData));
+                await AsyncStorage.setItem('@kennysNotesApp', JSON.stringify(existingData));
                 showMessage({
                     message: 'Note Added',
                     description: 'Message',
